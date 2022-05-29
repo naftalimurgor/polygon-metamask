@@ -20,6 +20,6 @@ export const POLYGON_TESTNET_PARAMS = {
     symbol: 'MATIC',
     decimals: 18
   },
-  rpcUrls: ['https://matic-mumbai.chainstacklabs.com/'],
+  rpcUrls: ['https://polygon-mumbai.g.alchemy.com/v2/pQZMy8uRbwDe40VDwmBLGnpMp9rZiX4s'],
   blockExplorerUrls: ['https://mumbai.polygonscan.com/']
 }
