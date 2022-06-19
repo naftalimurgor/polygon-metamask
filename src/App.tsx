@@ -71,7 +71,7 @@ const App = () => {
       await provider.request({ method: 'wallet_addEthereumChain', params: [POLYGON_TESTNET_PARAMS] })
 
       // create web3 instance based on the provider
-      let _web3 = new Web3(Web3.givenProvider)
+      const _web3 = new Web3(Web3.givenProvider)
       setWeb3(_web3)
       console.log(provider)
     } catch (e) {
@@ -99,7 +99,7 @@ const App = () => {
     if (MetaMaskOnboarding.isMetaMaskInstalled()) {
       try {
 
-        let accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
+        const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
         handleAccounts(accounts)
       } catch (e) {
         console.log(e)
